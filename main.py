@@ -20,7 +20,7 @@ with app.app_context():
 @app.route('/', methods=['GET', 'POST'])
 def home():
     
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/gift', methods=['GET', 'POST'])
 def gift():
