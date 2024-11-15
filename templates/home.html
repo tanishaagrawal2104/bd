@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #fbe4d5;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #ff7f50;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .heart {
+            color: #ff4081;
+            font-size: 1.5em;
+        }
+        .message {
+            margin-top: 40px;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #ff6347;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .balloon {
+            width: 100px;
+            height: 150px;
+            background-color: #ffcccb;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px;
+        }
+        .balloon-string {
+            width: 2px;
+            height: 200px;
+            background-color: #333;
+            margin: 0 auto;
+        }
+        /* Gift Image Animation */
+        .gift-container {
+            position: fixed;
+            bottom: 100px;
+            width: 100%;
+            text-align: center;
+        }
+        .gift-image {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HAPPY BIRTHDAY CUTIEEEE!!!</h1>
+        <p>I hope your day is as amazing as you are! <span class="heart">❤️</span></p>
+        <div class="message">
+            <p>Wishing you love, joy, and all the best today and always! <span class="heart">💖</span></p>
+        </div>
+    </div>
+
+    <!-- Gift Image with Animation -->
+    <div class="gift-container">
+        <img src="static/gift.png" alt="Gift" class="gift-image" onclick="redirectToGiftPage()">
+    </div>
+
+    <script>
+        function redirectToGiftPage() {
+            window.location.href = "/gift";
+        }
+    </script>
+
+</body>
+</html>
